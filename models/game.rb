@@ -10,13 +10,11 @@ class Game
     'paper/rock' => "Player 1 won!",
     'scissors/paper' => "Player 1 won!",
     'scissors/rock' => "Player 2 won!",
-    'rock/rock' => "Draw!",
-    'scissors/scissors' => "Draw!",
-    'paper/paper' => "Draw!"
     }
   end
 
  def rps
+   return "Draw" if @player1 == @player2
    @results["#{@player1}/#{@player2}"]
  end
 
